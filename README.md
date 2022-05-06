@@ -3,7 +3,7 @@
 
 Members:
 - Cécile
-- Andreas
+- Andreas Front-end-dev
 - Jesper
 - William
 
