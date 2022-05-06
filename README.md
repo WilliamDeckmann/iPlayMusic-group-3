@@ -1,5 +1,5 @@
 # iPlayMusic
-## Group: 3
+### Group: 3
 
 Members:
 - Cécile
