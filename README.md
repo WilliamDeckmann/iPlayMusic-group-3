@@ -1,8 +1,10 @@
 # iPlayMusic
+
 ### Group: 3
 
 Members:
-- Cécile
+
+- Cécile som er sej
 - Andreas
 - Jesper
 - William
