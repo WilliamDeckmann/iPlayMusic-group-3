@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
-import Player from './pages/Player';
+import Welcome from './pages/Welcome';
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Player/>} />
+        <Route path="/" element={<Welcome/>} />
       </Routes>
     </div>
   );
