@@ -1,7 +1,8 @@
 const Player = () => {
   return (
-    <>
-    </>
+    <div>
+      Player
+    </div>
   );
 }
  
