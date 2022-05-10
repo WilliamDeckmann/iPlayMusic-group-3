@@ -25,10 +25,12 @@ import HeadingMedium from "./subComponents/HeadingMedium";
 import HeadingSmall from "./subComponents/HeadingSmall";
 import TextSmall from "./subComponents/TextSmall";
 import TextTiny from "./subComponents/TextTiny";
+import TopNav from "./components/TopNav";
 
 function App() {
   return (
     <div>
+      <TopNav/>
       <Routes>
         <Route exact path="/" element={<Welcome/>} />
         <Route exact path="/login" element={<Login/>} />
