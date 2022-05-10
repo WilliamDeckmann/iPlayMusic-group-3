@@ -1,14 +1,14 @@
 // Imports
 import { useLocation } from 'react-router-dom'
 
-const Player = () => {
+const AlbumDetails = () => {
   const location = useLocation();
 
   return (
     <div>
-      Player - pathname: {location.pathname}
+      AlbumDetails - pathname: {location.pathname}
     </div>
   );
 }
  
-export default Player;
+export default AlbumDetails;
