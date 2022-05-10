@@ -1,6 +1,7 @@
 const Swirly = () => {
   return (
     <>
+    <p>Swirly</p>
     </>
   );
 }

@@ -1,7 +1,9 @@
+import Swirly from "../subComponents/Swirly";
+
 const Walkthrough = () => {
   return (
     <div>
-      Walkthrough
+      <Swirly/>
     </div>
   );
 }
