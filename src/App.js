@@ -23,7 +23,9 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Welcome/>} />
         <Route exact path="/login" element={<Login/>} />
-        <Route exact path="/walkthrough" element={<Walkthrough/>} />
+        <Route exact path="/walkthrough" element={<Walkthrough/>}>
+          <Route exact path="/walkthrough:id" element={<Walkthrough/>}/>
+        </Route>
         <Route exact path="/player/:id" element={<Player/>} />
         <Route exact path="/events-feed" element={<EventsFeed/>} />
         <Route exact path="/latest-trends" element={<LatestTrends/>} />
