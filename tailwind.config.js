@@ -55,6 +55,15 @@ module.exports = {
         'extra-bold': 800,
         black: 900,
       },
+
+      fontSize: {
+        'giant': '36px',
+        'large': '32px',
+        'big': '24px',
+        'medium': '20px',
+        'small': '15px',
+        'tiny': '12px',
+      },
     },
   },
   plugins: [],
