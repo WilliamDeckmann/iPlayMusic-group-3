@@ -1,6 +1,6 @@
 import { useNavigate , useLocation } from "react-router-dom";
-import { IoIosArrowBack } from 'react-icons/ioios';
-import { IoIosSearch } from 'react-icons/ioios';
+import { IoIosArrowBack } from 'react-icons/io';
+import { IoIosSearch } from 'react-icons/io';
 import HeadingSmall from "../subComponents/HeadingSmall";
 
 const TopNav = () => {
@@ -9,14 +9,14 @@ const TopNav = () => {
   const path = location.pathname.replace('/', '').replace('-', ' ').toUpperCase();
 
   return (
-    <header>
+    <header style={{background: "#FFFFFF"}}>
       <nav className="w-full px-4 py-6 flex justify-between items-center">
         <button className="w-4 p-2 box-content" onClick={() => navigate(-1)}>
-          <IoIosArrowBack/>
+          <IoIosArrowBack size="16px" color="#341931"/>
         </button>
-        <HeadingSmall text={path} weight="200"/>
+        <HeadingSmall text={path} weight="200" color="#341931" />
         <button className="w-4 p-2 box-content justify-self-end">
-          <IoIosSearch/>
+          <IoIosSearch size="16px" color="#341931"/>
         </button>
       </nav>
     </header>
