@@ -25,10 +25,13 @@ import HeadingMedium from "./subComponents/HeadingMedium";
 import HeadingSmall from "./subComponents/HeadingSmall";
 import TextSmall from "./subComponents/TextSmall";
 import TextTiny from "./subComponents/TextTiny";
+import TopNav from "./components/TopNav";
+import BottomNav from "./components/BottomNav";
 
 function App() {
   return (
     <div>
+      <TopNav/>
       <Routes>
         <Route exact path="/" element={<Welcome/>} />
         <Route exact path="/login" element={<Login/>} />
@@ -47,6 +50,7 @@ function App() {
         <Route exact path="/album-details/:id" element={<AlbumDetails/>} />
         <Route path="*" element={<NothingFound/>} />
       </Routes>
+      <BottomNav/>
 
       Text component examples: (only for testing)
       <HeadingGiant text="HeadingGiant: 36px" color="red" weight="600"/>
