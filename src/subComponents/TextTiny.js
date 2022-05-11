@@ -1,6 +1,6 @@
 const TextTiny = (props) => {
   return (
-    <p className="text-small font-Poppins" style={{color: props.color, fontWeight: props.weight}}>
+    <p className="text-tiny font-Poppins" style={{color: props.color, fontWeight: props.weight}}>
       {props.text}
     </p>
   );
