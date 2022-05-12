@@ -1,5 +1,5 @@
 // Imports
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 // Pages
 import Welcome from './pages/Welcome';
@@ -33,10 +33,9 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Welcome />} />
         <Route exact path='/login' element={<Login />} />
-        <Route path='/walkthrough/*' element={<Walkthrough />} />
-        
-        {/* <Route exact path="/walkthrough:id" element={<Walkthrough/>}/> */}
-
+        <Route exact path="/walkthrough" element={<Walkthrough/>}>
+          <Route exact path="/walkthrough:id" element={<Walkthrough/>}/>
+        </Route>
         <Route exact path='/player/:id' element={<Player />} />
         <Route exact path='/events-feed' element={<EventsFeed />} />
         <Route exact path='/latest-trends' element={<LatestTrends />} />
@@ -49,14 +48,14 @@ function App() {
         <Route exact path='/album-details/:id' element={<AlbumDetails />} />
         <Route path='*' element={<NothingFound />} />
       </Routes>
-      {/* Text component examples: (only for testing)
+      Text component examples: (only for testing)
       <HeadingGiant text='HeadingGiant: 36px' color='red' weight='600' />
       <HeadingLarge text='HeadingGiant: 32px' color='red' weight='600' />
       <HeadingBig text='HeadingBig: 24px' color='red' weight='600' />
       <HeadingMedium text='HeadingMedium: 20px' color='red' weight='600' />
       <HeadingSmall text='HeadingSmall: 15px' color='red' weight='600' />
       <TextSmall text='TextSmall: 15px' color='red' weight='600' />
-      <TextTiny text='TextSmall: 12px' color='red' weight='600' /> */}
+      <TextTiny text='TextSmall: 12px' color='red' weight='600' />
     </div>
   );
 }
