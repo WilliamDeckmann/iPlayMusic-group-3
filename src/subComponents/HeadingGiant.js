@@ -1,6 +1,6 @@
 const HeadingGiant = (props) => {
   return (
-    <h1 className="text-giant font-Poppins" style={{color: props.color, fontWeight: props.weight}}>
+    <h1 className="text-giant font-Poppins text-transparent bg-clip-text bg-gradient-to-r from-GradientRedOne to-GradientRedTwo text-BleachedCedar font-bold" >
       {props.text}
     </h1>
   );

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaSun, FaMoon } from 'react-icons/fa';
+import { IoIosContrast } from 'react-icons/io';
 import { ThemeContext } from './ThemeContext';
 
 const Toggle = () => {
@@ -8,14 +9,14 @@ const Toggle = () => {
   return (
     <div className='transition duration-500 ease-in-out rounded-full p-2'>
       {theme === 'dark' ? (
-        <FaSun
+        <IoIosContrast
           onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-          className='text-white dark:text-black text-2xl cursor-pointer'
+          class='text-2xl cursor-pointer' style={{ fill: "url(#gradient)" }}
         />
       ) : (
-        <FaMoon
+        <IoIosContrast
           onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-          className='text-black dark:text-black text-2xl cursor-pointer'
+          class='text-2xl cursor-pointer' style={{ fill: "url(#gradient)" }}
         />
       )}
     </div>
