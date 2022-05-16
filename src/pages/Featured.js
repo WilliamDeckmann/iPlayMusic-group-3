@@ -11,7 +11,8 @@ import TextTiny from '../subComponents/TextTiny';
 
 const Featured = () => {
   return (
-    <div class='h-[1000px] w-full dark:bg-BleachedCedar bg-white overflow-hidden'>
+    <div class='h-[1080px] w-full dark:bg-BleachedCedar bg-white overflow-hidden'>
+      <TopNav/>
       <div class='ml-[8%]'>
         <HeadingGiant text='Featured' />
       </div>
@@ -34,7 +35,7 @@ const Featured = () => {
             <FeaturedCard />
             <div class='absolute small:mt-[-60%] medium:mt-[-45%] large:mt-[-40%] tablet:mt-[-15%] ml-[3%]'>
               <HeadingLarge
-                text='The Greatest Showman'
+                text='The Evilest Snowman'
                 color='white'
                 weight='bold'
               />
