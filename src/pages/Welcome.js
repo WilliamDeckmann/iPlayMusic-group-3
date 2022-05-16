@@ -8,7 +8,7 @@ const Welcome = () => {
           <div class='flex justify-center relative'>
             <img
               src='/assets/dark.png'
-              class='w-[160px] small:mt-[70%] large:mt-[50%] tablet:mt-[30%] laptopS:mt-[25%] laptopL:mt-[17%] 4K:mt-[10%] absolute'
+              class='w-[160px] small:mt-[70%] large:mt-[50%] tablet:mt-[30%] laptopS:mt-[25%] laptopL:mt-[17%] 4K:mt-[10%] absolute animate-[pulse_3s_ease-in-out_infinite]'
             ></img>
             <img
               src='/assets/iplay.png'

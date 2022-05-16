@@ -7,7 +7,7 @@ const ButtonWalk = () => {
   return (
     <>
       <div class='grid grid-cols-3 gap-4 content-end'>
-        <div class='text-giant border-2 rounded-full w-[55px] h-[55px] pt-2 pl-2  border-black hover:bg-DarkHotPink hover:border-DarkHotPink hover:text-white dark:text-white dark:border-white dark:hover:bg-white dark:hover:text-orange-600'>
+        <div class='text-giant border-2 rounded-full w-[55px] h-[55px] pt-2 pl-2 border-black hover:bg-DarkHotPink hover:border-DarkHotPink hover:text-white dark:text-white dark:border-white dark:hover:bg-white dark:hover:text-orange-600'>
           <Link to='/walkthrough'>
             <IoRadioOutline />
           </Link>
