@@ -4,6 +4,7 @@ import { IoIosMicrophone } from 'react-icons/io';
 import { IoMdWifi } from 'react-icons/io';
 import { IoIosContrast } from 'react-icons/io';
 import { IoMdSettings } from 'react-icons/io';
+import Toggle from '../context/ThemeToggle';
 
 const BottomNav = () => {
   const navigate = useNavigate();
@@ -14,14 +15,14 @@ const BottomNav = () => {
     .toUpperCase();
 
   return (
-    <footer style={{background: "#FFFFFF"}}>
+    <footer class="bottom-0 sticky bg-white dark:bg-Mirage drop-shadow-[0_25px_25px_rgba(0,0,0,0.25)]">
       <svg width="0" height="0">
         <linearGradient id="gradient" x1="100%" y1="100%" x2="0%" y2="0%">
           <stop stopColor="#FF6A00" offset="0%" />
           <stop stopColor="#EE0979" offset="100%" />
         </linearGradient>
       </svg>
-      <nav className='w-full px-6 py-3 flex justify-between items-center'>
+      <nav className='w-full px-6 py-3 flex justify-between items-center '>
 
         <Link to='/all-albums' className='p-2' >
           <IoIosPulse size="20px" style={{ fill: "url(#gradient)" }}/>
@@ -35,7 +36,7 @@ const BottomNav = () => {
           </div>
         </Link>
         <button className='p-2'>
-          <IoIosContrast size="20px" style={{ fill: "url(#gradient)" }}/>
+          <Toggle size="20px" style={{ fill: "url(#gradient)" }}/>
         </button>
         <Link to='/categories' className='p-2'>
           <IoMdSettings size="20px" style={{ fill: "url(#gradient)" }}/>

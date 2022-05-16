@@ -6,6 +6,7 @@ import WalkthroughOne from '../subComponents/WalkthroughLayouts';
 import WalkTwo from '../subComponents/WalkthroughTwo';
 import WalkThree from '../subComponents/WalkthroughThree';
 import Skip from '../subComponents/Skip';
+import { motion } from 'framer-motion';
 
 // Pages
 import NothingFound from '../pages/NothingFound';
