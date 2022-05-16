@@ -1,7 +1,7 @@
 const Swirly = () => {
   return (
     <>
-      <img src='#' alt='Swirl' />
+      <img src='/assets/Asset 2.png' class='bg-transparent' />
     </>
   );
 };
