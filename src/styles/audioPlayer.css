@@ -1,0 +1,4 @@
+input[type="range"].slider {
+  height: 3px;
+  background: linear-gradient(90deg, #FF6A00, #EE0979);
+}

@@ -1,3 +1,4 @@
+// Conponents
 import HeadingSmall from "../subComponents/HeadingSmall";
 import TextTiny from "../subComponents/TextTiny";
 
