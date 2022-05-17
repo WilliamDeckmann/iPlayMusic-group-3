@@ -38,9 +38,7 @@ const BottomNav = () => {
             <IoMdWifi size='24px' class="text-white dark:text-black" />
           </div>
         </Link>
-        <button className='p-2'>
-          <Toggle size='20px' style={{ fill: 'url(#gradient)' }} />
-        </button>
+        <Toggle size='20px' style={{ fill: 'url(#gradient)' }} />
         <Link to='/categories' className='p-2'>
           <IoMdSettings size='20px' style={{ fill: 'url(#gradient)' }} />
         </Link>

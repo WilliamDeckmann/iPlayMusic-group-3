@@ -36,19 +36,24 @@ const Playlists = () => {
   ];
 
   return (
-    <ul className="p-6 flex flex-col gap-4">
-      {array.map(song => (
-        <div>
-          <PlayerCard
-            key={song.id}
-            title={song.title}
-            artist={song.artist}
-            time="--"
-            link={song.link}
-          />
-        </div>
-      ))}
-    </ul>
+    <div>
+      <section>
+        
+      </section>
+      <ul className="p-6 flex flex-col gap-4">
+        {array.map(song => (
+          <div>
+            <PlayerCard
+              key={song.id}
+              title={song.title}
+              artist={song.artist}
+              time="--"
+              link={song.link}
+            />
+          </div>
+        ))}
+      </ul>
+    </div>
     
   );
 }
