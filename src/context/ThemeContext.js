@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const getInitialTheme = () => {
   if (typeof window !== 'undefined' && window.localStorage) {
     const storedPrefs = window.localStorage.getItem('color-theme');
@@ -43,3 +44,4 @@ export const ThemeProvider = ({ initialTheme, children }) => {
     </ThemeContext.Provider>
   );
 };
+

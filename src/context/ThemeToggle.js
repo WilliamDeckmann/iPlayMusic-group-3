@@ -1,7 +1,9 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 import { FaSun, FaMoon } from 'react-icons/fa';
 import { IoIosContrast } from 'react-icons/io';
 import { ThemeContext } from './ThemeContext';
+
 
 const Toggle = () => {
   const { theme, setTheme } = React.useContext(ThemeContext);
