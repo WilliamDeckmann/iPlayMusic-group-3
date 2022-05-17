@@ -10,6 +10,7 @@ const LoginInput = (props) => {
           type={props.type}
           name='name'
           placeholder={props.placeholder}
+          // {props.usingRegister}
         />
         <div className='absolute right-0 top-7 text-base'>{props.icon}</div>
       </div>
