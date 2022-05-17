@@ -6,10 +6,10 @@ const Welcome = () => {
     <>
       <div class='h-[768px] w-full dark:bg-BleachedCedar bg-white overflow-hidden'>
         <Link to='/walkthrough'>
-          <motion.div animate={{scale: 1.1}} transition={{duration: 1}} class='flex justify-center relative'>
+          <motion.div animate={{ opacity: 1 }} transition={{ duration: 1.5 }} class='flex justify-center relative opacity-0'>
             <img
               src='/assets/dark.png'
-              class='w-[160px] small:mt-[70%] large:mt-[50%] tablet:mt-[30%] laptopS:mt-[25%] laptopL:mt-[17%] 4K:mt-[10%] absolute animate-[pulse_2s_ease-in-out_infinite]'
+              class='w-[160px] small:mt-[70%] large:mt-[50%] tablet:mt-[30%] laptopS:mt-[25%] laptopL:mt-[17%] 4K:mt-[10%] absolute'
             ></img>
             <img
               src='/assets/iplay.png'
