@@ -20,7 +20,7 @@ let schema = yup.object().shape({
     .min(8, 'Password needs to be a minimum of 8 characters')
     .matches(
       /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&=+_-])[A-Za-z\d@$!%*?&=+_-]{8,}$/,
-      'At least one big and one small letter & one special character'
+      'At least one big & one small letter, one special character and a number'
     ),
 
   createdOn: yup.date().default(function () {
