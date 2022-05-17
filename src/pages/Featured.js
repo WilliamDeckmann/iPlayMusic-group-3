@@ -1,25 +1,29 @@
 import React from 'react';
 import TopNav from '../components/TopNav';
+import { Suspense } from 'react';
 // import { lazy } from 'react';
-import FeaturedCard from '../subComponents/FeaturedCard';
+// import FeaturedCard from '../subComponents/FeaturedCard';
 import HeadingGiant from '../subComponents/HeadingGiant';
 import HeadingLarge from '../subComponents/HeadingLarge';
 import TextSmall from '../subComponents/TextSmall';
 import TextTiny from '../subComponents/TextTiny';
+import { motion } from 'framer-motion';
 
-// const FeaturedCard = React.lazy(() => import('../subComponents/FeaturedCard'));
+const FeaturedCard = React.lazy(() => import('../subComponents/FeaturedCard'));
 
 const Featured = () => {
   return (
     <div class='h-[1080px] w-full dark:bg-BleachedCedar bg-white overflow-hidden'>
-      <TopNav/>
+      <TopNav />
       <div class='ml-[8%]'>
         <HeadingGiant text='Featured' />
       </div>
-      <div class='flex justify-center mt-[40px] relative overflow-scroll'>
+      <div class='flex justify-center mt-[20px] relative overflow-scroll'>
         <div class='grid gap-9 '>
-          <div>
-            <FeaturedCard />
+          <motion.div animate={{ opacity: 1 }} transition={{ duration: 1 }} class="opacity-0">
+            <Suspense fallback={<div>Loading</div>}>
+              <FeaturedCard/>
+            </Suspense>
             <div class='absolute small:mt-[-60%] medium:mt-[-45%] large:mt-[-40%] tablet:mt-[-15%] ml-[3%]'>
               <HeadingLarge
                 text='The Greatest Showman'
@@ -30,9 +34,11 @@ const Featured = () => {
                 <TextSmall text='Soundtrack' color='white' />
               </div>
             </div>
-          </div>
-          <div>
-            <FeaturedCard />
+          </motion.div>
+          <motion.div animate={{ opacity: 1 }} transition={{ duration: 2 }} class="opacity-0">
+            <Suspense fallback={<div>Loading</div>}>
+              <FeaturedCard />
+            </Suspense>
             <div class='absolute small:mt-[-60%] medium:mt-[-45%] large:mt-[-40%] tablet:mt-[-15%] ml-[3%]'>
               <HeadingLarge
                 text='The Evilest Snowman'
@@ -43,7 +49,7 @@ const Featured = () => {
                 <TextSmall text='Soundtrack' color='white' />
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

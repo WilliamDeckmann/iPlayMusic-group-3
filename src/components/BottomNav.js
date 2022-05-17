@@ -34,7 +34,7 @@ const BottomNav = () => {
           <div
             className='h-6 w-6 p-2 box-content rounded-full relative'
             style={{ background: 'linear-gradient(#EE0979, #FF6A00)' }}>
-            <IoMdWifi size='24px' color='#FFFFFF' />
+            <IoMdWifi size='24px' class="text-white dark:text-black" />
           </div>
         </Link>
         <button className='p-2'>
