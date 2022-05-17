@@ -16,7 +16,7 @@ const PlayerCard = (props) => {
       info={props.time}
       content={
         <Link
-          to="/player/1">
+          to={props.link}>
           <div
             className="p-2 rounded-full cursor-pointer"
             style={{ background: 'linear-gradient(#EE0979, #FF6A00)' }}

@@ -1,4 +1,31 @@
 input[type="range"].slider {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+input[type="range"].slider::-webkit-slider-runnable-track {
   height: 3px;
   background: linear-gradient(90deg, #FF6A00, #EE0979);
+}
+
+input[type="range"].slider:focus::-webkit-slider-runnable-track {
+  background: linear-gradient(90deg, #FF6A00, #EE0979);
+}
+
+input[type="range"].slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background-color: #EE0979;
+  outline: 5px solid rgb(238, 9, 121, .5);  
+  border: none;
+}
+
+input[type="range"].slider:focus::-webkit-slider-thumb, input[type="range"].slider:hover::-webkit-slider-thumb {
+  width: 12px;
+  height: 12px;
+  background-color: #EE0979;
+  outline: 5px solid rgb(238, 9, 121, .5);  
 }
