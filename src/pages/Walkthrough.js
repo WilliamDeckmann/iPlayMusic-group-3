@@ -20,7 +20,7 @@ const Walkthrough = () => {
           <div class='absolute flex justify-center text-center h-full w-full small:mt-[-30%] medium:mt-[-30%] large:mt-[-25%] tablet:mt-[-20%] laptopS:mt-[-10%] laptopL:mt-[-10%] 4K:mt-[-5%]'>
             <ButtonWalk />
           </div>
-          <Link to="/player">
+          <Link to="/featured">
             <div class='small:mt-[205%] medium:mt-[170%] large:mt-[155%] tablet:mt-[80%]'>
               <Skip />
             </div>

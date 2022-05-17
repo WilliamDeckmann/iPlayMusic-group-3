@@ -1,6 +1,5 @@
 import { useNavigate , useLocation } from "react-router-dom";
-import { IoIosArrowBack } from 'react-icons/io';
-import { IoIosSearch } from 'react-icons/io';
+import { IoIosArrowBack, IoIosSearch } from 'react-icons/io';
 import HeadingSmall from "../subComponents/HeadingSmall";
 
 const TopNav = () => {
