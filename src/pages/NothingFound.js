@@ -1,7 +1,7 @@
 const NothingFound = () => {
   return (
     <div>
-      NothingFound
+      
     </div>
   );
 }

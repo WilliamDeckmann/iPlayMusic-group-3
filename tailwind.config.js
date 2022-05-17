@@ -1,4 +1,5 @@
 module.exports = {
+  darkMode: 'class',
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
@@ -46,13 +47,13 @@ module.exports = {
 
       fontWeight: {
         'extra-light': 200,
-        'light': 300,
-        'regular': 400,
-        'medium': 500,
-        'semiBold': 600,
-        'bold': 700,
+        light: 300,
+        regular: 400,
+        medium: 500,
+        semiBold: 600,
+        bold: 700,
         'extra-bold': 800,
-        'black': 900,
+        black: 900,
       },
 
       fontSize: {
