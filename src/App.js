@@ -40,7 +40,7 @@ function App() {
         </Route>
       </Routes>
 
-      <TopNav />
+      {/* <TopNav /> */}
       <Routes>
         <Route exact path='/player/:id' element={<Player />} />
         <Route exact path='/events-feed' element={<EventsFeed />} />
