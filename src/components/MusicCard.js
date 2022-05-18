@@ -14,22 +14,22 @@ const MusicCard = (props) => {
     <div
       key={props.key}
       className='grid items-center overflow-hidden rounded-lg cursor-pointer'
-      style={{ gridTemplateColumns: 'auto 1fr pointer' }}
+      style={{ gridTemplateColumns: 'auto 1fr' }}
       onClick={ChangeState}
     >
-      <div className={!state ? 'pr-4' : 'p-7'}>{props.content}</div>
+      <div className={!state ? 'pr-4' : 'p-7 bg-gray-200'}>{props.content}</div>
       <article
         className={
           !state
-            ? 'flex justify-between items-center'
-            : 'flex justify-between items-center p-4 pr-3'
+            ? 'h-full flex justify-between items-center'
+            : 'h-full flex justify-between items-center p-4 pr-3 bg-gradient-to-r from-GradientRedOne to-GradientRedTwo text-white'
         }
       >
         <section className='flex flex-col gap-1'>
-          <HeadingSmall text={props.title} color='#341931' weight='600' />
-          <TextTiny text={props.artist} color='#341931' weight='200' />
+          <HeadingSmall text={props.title} color={!state? "#341931" : "#FFFFFF"} weight='600' />
+          <TextTiny text={props.artist} color={!state? "#341931" : "#FFFFFF"} weight='200' />
         </section>
-        <TextTiny text={props.info} color='#341931' weight='200' />
+        <TextTiny text={props.info} color={!state? "#341931" : "#FFFFFF"} weight='200' />
       </article>
     </div>
   );
