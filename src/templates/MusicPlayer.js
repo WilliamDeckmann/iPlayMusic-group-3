@@ -18,7 +18,7 @@ import SoundWave from "../assets/sound_wave.png"
 import HeadingMedium from "../subComponents/HeadingMedium"
 import TextSmall from "../subComponents/TextSmall"
 
-const Player = (props) => {
+const MusicPlayer = (props) => {
   let rearrangedPlayer = [
     {
       className: "tier-top",
@@ -99,4 +99,4 @@ const Player = (props) => {
   );
 };
 
-export default Player;
+export default MusicPlayer;
