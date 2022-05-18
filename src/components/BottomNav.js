@@ -30,6 +30,7 @@ const BottomNav = () => {
           <IoIosMicrophone size='20px' style={{ fill: 'url(#gradient)' }} />
         </Link>
         <Link to='/featured'>
+
           <div class='absolute h-[30px] w-[30px] rounded-full animate-ping bg-GradientRedOne ml-[5px] mt-[5px]'></div>
           <div
             className='h-6 w-6 p-2 box-content rounded-full relative'
@@ -37,9 +38,7 @@ const BottomNav = () => {
             <IoMdWifi size='24px' class="text-white dark:text-black" />
           </div>
         </Link>
-        <button className='p-2'>
-          <Toggle size='20px' style={{ fill: 'url(#gradient)' }} />
-        </button>
+        <Toggle size='20px' style={{ fill: 'url(#gradient)' }} />
         <Link to='/categories' className='p-2'>
           <IoMdSettings size='20px' style={{ fill: 'url(#gradient)' }} />
         </Link>
