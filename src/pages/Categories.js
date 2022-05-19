@@ -1,4 +1,5 @@
 import TopNav from '../components/TopNav';
+import BottomNav from '../components/BottomNav';
 import HeadingGiant from '../subComponents/HeadingGiant';
 import CategoryCard from '../subComponents/CategoryCard';
 import { motion } from 'framer-motion';
@@ -77,6 +78,9 @@ const Categories = () => {
         >
           <CategoryCard background='#115793' color='white' text='Industrial' />
         </motion.div>
+      </div>
+      <div className='mt-[5%]'> 
+        <BottomNav />
       </div>
     </div>
   );

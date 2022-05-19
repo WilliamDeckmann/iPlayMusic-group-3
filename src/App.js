@@ -54,7 +54,7 @@ function App() {
         <Route exact path='/album-details/:id' element={<AlbumDetails />} />
         <Route path='*' element={<NothingFound />} />
       </Routes>
-      <BottomNav />
+      
 
       {/* Text component examples: (only for testing) */}
       {/* <HeadingGiant text='HeadingGiant: 36px' color='red' weight='600' />
