@@ -21,7 +21,7 @@ const PlayerCard = (props) => {
             className="p-2 rounded-full cursor-pointer"
             style={{ background: 'linear-gradient(#EE0979, #FF6A00)' }}
           >
-            <IoMdPlay color='#FFFFFF' size='10px' />
+            <IoMdPlay color='white' size='10px' />
           </div>
         </Link>
       }

@@ -11,8 +11,8 @@ const TopNav = () => {
     .toUpperCase();
 
   return (
-    <header class='bg-white dark:bg-BleachedCedar'>
-      <nav className='w-full px-4 py-6 flex justify-between items-center'>
+    <header class='bg-transparent dark:bg-transparent'>
+      <nav className='w-full px-4 py-6 flex justify-between items-center font-medium'>
         <button className='w-4 p-2 box-content' onClick={() => navigate(-1)}>
           <IoIosArrowBack
             size='16px'
