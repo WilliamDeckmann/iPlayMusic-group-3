@@ -47,14 +47,16 @@ const Playlists = () => {
 
   return (
     <div className='w-full h-[100%] dark:bg-BleachedCedar relative'>
-      <TopNav />
       <motion.div
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
         className='opacity-0'
       >
-        <div className='mt-[-0px] absolute'>
-          <div className='p-6 z-20'>
+        <div className='absolute top-0 left-0 w-[100%]'>
+          <TopNav />
+        </div>
+        <div className='mt-[80px] absolute'>
+          <div className='p-6 mt-[-30px]'>
             <HeadingGiant text='Playlists' color='white' />
           </div>
         </div>
@@ -82,7 +84,9 @@ const Playlists = () => {
             </div>
           ))}
         </ul>
-        <div className='flex justify-center mt-[-40px]'><LongBtn text="Listen All"/></div>
+        <div className='flex justify-center mt-[-40px]'>
+          <LongBtn text='Listen All' />
+        </div>
       </motion.div>
       <div className='mt-[5%]'>
         <BottomNav />
