@@ -5,6 +5,9 @@ import CategoryCard from '../subComponents/CategoryCard';
 import { motion } from 'framer-motion';
 import { IoEllipsisHorizontal } from 'react-icons/io5';
 
+
+
+
 const Categories = () => {
   return (
     <div class='h-[100%] w-full dark:bg-BleachedCedar bg-white overflow-hidden'>
