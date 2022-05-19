@@ -12,11 +12,13 @@ import RewindInactive from "../assets/rewind_inactive.png"
 import SkipActive from "../assets/skip_active.png"
 import SkipInactive from "../assets/skip_inactive.png"
 import Vinyl from "../assets/vinyl.png"
-import SoundWave from "../assets/sound_wave.png"
+import SoundWave from "../assets/sound_wave_pink.png"
 
 // Components
 import HeadingMedium from "../subComponents/HeadingMedium"
 import TextSmall from "../subComponents/TextSmall"
+import TopNav from '../components/TopNav';
+import Playlists from '../pages/Playlists';
 
 const Player = (props) => {
   let rearrangedPlayer = [
@@ -36,7 +38,7 @@ const Player = (props) => {
       innerComponents: [
         {
           type: "time",
-          style: {width: "fit-content"},
+          style: {width: "fit-content", color: "#EE0979"},
         },
       ]
     },
@@ -61,13 +63,14 @@ const Player = (props) => {
   ]
 
   return (
-    <div className='w-full grid justify-center' style={{gridTemplateColumns: "1fr", gridTemplateRows: "1fr auto auto", backgroundColor: "#FFFFFF"}}>
+    <div className='w-full grid justify-center h-[100%] bg-white dark:bg-BleachedCedar' style={{gridTemplateColumns: "1fr", gridTemplateRows: "1fr auto auto"}}>
+      <TopNav/>
       <section className='py-6 flex justify-center items-center bg-center bg-contain bg-repeat-x' style={{backgroundImage: `url(${SoundWave})`}}>
-        <img src={Vinyl} alt="Vinyl"  />
+        <img src={Vinyl} alt="Vinyl" className='w-[200px]' />
       </section>
       <article className='flex flex-col gap-3 items-center'>
-        <HeadingMedium text="SongTitle" color="#341931" weight="600"/>
-        <TextSmall text="Artist" color="#341931" weight="200"/>
+        <HeadingMedium text="SongTitle" color="" weight="600"/>
+        <TextSmall text="Artist" color="" weight="200"/>
       </article>
       <div className='w-full p-6'>
         <AudioPlayer
@@ -76,7 +79,7 @@ const Player = (props) => {
           playerWidth="100%"
           iconSize="auto"
           fontSize="15px"
-          fontColor="#341931"
+          fontColor=""
           fontFamily="Poppins"
           hideLoop
           hideName
