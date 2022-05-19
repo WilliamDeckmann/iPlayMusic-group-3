@@ -27,7 +27,7 @@ const Featured = () => {
             class='opacity-0'
           >
             <Suspense fallback={<div>Loading</div>}>
-              <FeaturedCard />
+              <FeaturedCard image="../assets/night.webp"/>
             </Suspense>
             <div class='absolute small:mt-[-60%] medium:mt-[-45%] large:mt-[-40%] tablet:mt-[-15%] ml-[3%]'>
               <HeadingLarge
@@ -46,7 +46,7 @@ const Featured = () => {
             class='opacity-0'
           >
             <Suspense fallback={<div>Loading</div>}>
-              <FeaturedCard />
+              <FeaturedCard image="../assets/music1.jpg"/>
             </Suspense>
             <div class='absolute small:mt-[-60%] medium:mt-[-45%] large:mt-[-40%] tablet:mt-[-15%] ml-[3%]'>
               <HeadingLarge
