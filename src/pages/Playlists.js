@@ -1,6 +1,7 @@
 // Components
 import PlayerCard from '../components/PlayerCard';
 import TopNav from '../components/TopNav';
+import BottomNav from '../components/BottomNav';
 import HeadingGiant from '../subComponents/HeadingGiant';
 import { motion } from 'framer-motion';
 import LongBtn from '../subComponents/LongBtnPlay';
@@ -83,6 +84,9 @@ const Playlists = () => {
         </ul>
         <div className='flex justify-center mt-[-40px]'><LongBtn text="Listen All"/></div>
       </motion.div>
+      <div className='mt-[5%]'>
+        <BottomNav />
+      </div>
     </div>
   );
 };
