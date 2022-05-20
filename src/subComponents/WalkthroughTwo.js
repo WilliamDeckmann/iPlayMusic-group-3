@@ -14,8 +14,8 @@ const WalkTwo = () => {
       <div class='text-black dark:text-white font-bold small:mt-[-0%] medium:mt-[15%] large:mt-[25%] tablet:mt-[55%]'>
         <HeadingBig text="No Music No Life" />
       </div>
-      <div class='text-black dark:text-white text-[42px] font-semiBold'>
-        <TextTiny />
+      <div class='text-black dark:text-white text-[42px] font-semiBold mt-[10%]'>
+        <TextTiny text="Vivamus auctor dui dignissim, sollicitudin nunc ac, aliquam justo. Vestibulum pellentesque lacinia eleifend."/>
       </div>
     </div>
   );

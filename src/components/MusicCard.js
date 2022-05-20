@@ -19,7 +19,7 @@ const MusicCard = (props) => {
       style={{ gridTemplateColumns: 'auto 1fr' }}
       onClick={ChangeState}
     >
-      <div className={!state ? 'pr-4' : 'p-7 bg-gray-200'}>{props.content}</div>
+      <div className={!state ? 'pr-4' : 'p-7 bg-black'}>{props.content}</div>
       <article
         className={
           !state
@@ -27,11 +27,11 @@ const MusicCard = (props) => {
             : 'h-full flex justify-between items-center p-4 pr-3 bg-gradient-to-r from-GradientRedOne to-GradientRedTwo text-white'
         }
       >
-        <section className='flex flex-col gap-1'>
+        <section className='flex flex-col gap-1 font-bold'>
           <HeadingSmall text={props.title} color={!state? "#341931" : "#FFFFFF"} weight='600' />
-          <TextTiny text={props.artist} color={!state? "#341931" : "#FFFFFF"} weight='200' />
+          <TextTiny text={props.artist} color={!state? "#EE0979" : "#FFFFFF"} weight='200' />
         </section>
-        <TextTiny text={props.info} color={!state? "#341931" : "#FFFFFF"} weight='200' />
+        <TextTiny text={props.info} color={!state? "#EE0979" : "#FFFFFF"} weight='200' />
       </article>
     </div>
   );
