@@ -19,28 +19,28 @@ const Playlists = () => {
       id: 'NeverGonnaGiveYouUp',
       title: 'Never Gonna Give You Up',
       artist: 'Rick Ashley',
-      time: '4:55',
+      time: '2:20',
       link: '/player/never-gonna-give-you-up',
     },
     {
       id: 'Africa',
       title: 'Africa',
       artist: 'Toto',
-      time: '4:55',
+      time: '4:31',
       link: '/player/africa',
     },
     {
       id: 'TakeOnMe',
       title: 'Take On Me',
       artist: 'A-ha',
-      time: '4:55',
+      time: '4:04',
       link: '/player/take-on-me',
     },
     {
       id: 'MamaMia',
       title: 'Mama Mia',
       artist: 'ABBA',
-      time: '4:55',
+      time: '3:30',
       link: '/player/mamma-mia',
     },
   ];
@@ -68,7 +68,7 @@ const Playlists = () => {
 
       <motion.div
         animate={{ opacity: 1 }}
-        transition={{ duration: 2 }}
+        transition={{ duration: 3 }}
         className='opacity-0'
       >
         <ul className='p-6 flex flex-col gap-4 mt-[30px]'>
@@ -88,7 +88,7 @@ const Playlists = () => {
           <LongBtn text='Listen All' />
         </div>
       </motion.div>
-      <div className='mt-[5%]'>
+      <div className='mt-[-5%]'>
         <BottomNav />
       </div>
     </div>

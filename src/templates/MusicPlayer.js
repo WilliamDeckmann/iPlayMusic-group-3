@@ -20,6 +20,8 @@ import TextSmall from '../subComponents/TextSmall';
 import TopNav from '../components/TopNav';
 import Playlists from '../pages/Playlists';
 
+import { motion } from 'framer-motion';
+
 const Player = (props) => {
   let rearrangedPlayer = [
     {
@@ -72,19 +74,22 @@ const Player = (props) => {
       className='w-full grid justify-center h-[100%] bg-white dark:bg-BleachedCedar'
       style={{ gridTemplateColumns: '1fr', gridTemplateRows: '1fr auto auto' }}
     >
-      <TopNav />
-      <section
-        className='py-6 flex justify-center items-center bg-center bg-contain bg-repeat-x'
+      <TopNav/>
+      <motion.section animate={{opacity: 1}} transition={{duration: 2}} 
+        className='py-6 flex justify-center items-center bg-center bg-contain bg-repeat-x opacity-0'
         style={{ backgroundImage: `url(${SoundWave})` }}
       >
         <div class='absolute h-[115px] w-[115px] rounded-full animate-ping bg-DarkHotPink opacity-[70%] ml-[0px] mt-[0px]' />
         <img src={Vinyl} alt='Vinyl' className='w-[200px]' />
-      </section>
+      </motion.section>
       <article className='flex flex-col gap-3 items-center'>
         <HeadingMedium text='Title' color='' weight='600' />
         <TextSmall text='Artist' color='' weight='200' />
       </article>
-      <div className='w-full p-6'>
+      <motion.div
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      className='opacity-0 w-full p-6'>
         <AudioPlayer
           // Setup
           audioFiles={props.array}
@@ -107,7 +112,7 @@ const Player = (props) => {
           // Layout
           rearrange={rearrangedPlayer}
         />
-      </div>
+      </motion.div>
     </div>
   );
 };

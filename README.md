@@ -4,7 +4,7 @@
 
 Members:
 - Cécile Front-end
-- Andreas Front-end
+- Andreas Front-end + Animator
 - Jesper Data-designer
 - William Tech-lead
 
