@@ -22,7 +22,7 @@ import Playlists from '../pages/Playlists';
 
 import { motion } from 'framer-motion';
 
-const Player = (props) => {
+const MusicPlayer = (props) => {
   let rearrangedPlayer = [
     {
       className: 'tier-top',
@@ -117,4 +117,4 @@ const Player = (props) => {
   );
 };
 
-export default Player;
+export default MusicPlayer;

@@ -12,6 +12,7 @@
     "react-dom": "^18.1.0",
     "react-hook-form": "^7.31.1",
     "react-icons": "^4.3.1",
+    "react-indiana-drag-scroll": "^2.1.0",
     "react-modular-audio-player": "^1.2.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
