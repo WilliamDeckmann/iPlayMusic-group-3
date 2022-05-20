@@ -13,7 +13,7 @@ import NothingFound from '../pages/NothingFound';
 
 const Walkthrough = () => {
   return (
-    <div class='relative overflow-hidden'>
+    <motion.div animate={{opacity: 1}} transition={{duration: 1}} class='relative overflow-hidden opacity-0'>
       <div class='dark:bg-gradient-to-b from-GradientRedOne to-GradientRedTwo h-[768px]'>
         <div class='grid content-center text-center h-[768px]'>
           {/* <WalkthroughOne /> */}
@@ -35,7 +35,7 @@ const Walkthrough = () => {
           </Routes>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

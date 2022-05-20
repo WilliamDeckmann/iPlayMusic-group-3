@@ -1,5 +1,5 @@
 // Templates
-import MusicPlayer from "../templates/MusicPlayer"
+import MusicPlayer from '../templates/MusicPlayer';
 
 // Audio
 import BillieJean from '../music/billie_jean.mp3';
@@ -8,32 +8,34 @@ import Africa from '../music/africa.mp3';
 import TakeOnMe from '../music/take_on_me.mp3';
 import MamaMia from '../music/mamma_mia.mp3';
 
+import { motion } from 'framer-motion';
+
 const Player = () => {
   const playlist = [
     {
       src: BillieJean,
-      title: "Billie Jean",
-      artist: "Micheal Jackson"
+      title: 'Billie Jean',
+      artist: 'Micheal Jackson',
     },
     {
       src: NeverGonnaGiveYouUp,
-      title: "Never Gonna Give You Up",
-      artist: "Rick Ashley"
+      title: 'Never Gonna Give You Up',
+      artist: 'Rick Ashley',
     },
     {
       src: Africa,
-      title: "Africa",
-      artist: "Toto"
+      title: 'Africa',
+      artist: 'Toto',
     },
     {
       src: TakeOnMe,
-      title: "Take On Me",
-      artist: "A-ha"
+      title: 'Take On Me',
+      artist: 'A-ha',
     },
     {
       src: MamaMia,
-      title: "Mama Mia",
-      artist: "ABBA"
+      title: 'Mama Mia',
+      artist: 'ABBA',
     },
   ];
 
