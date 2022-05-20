@@ -42,6 +42,9 @@ function App() {
       setTopNav(false);
     } else if (path == '/player/:id') {
       setBottomNav(false);
+    } else {
+      setTopNav(true);
+      setBottomNav(true);
     };
   }, []);
 
