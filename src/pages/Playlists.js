@@ -90,9 +90,6 @@ const Playlists = () => {
           <LongBtn text='Listen All' />
         </div>
       </motion.div>
-      <div className='mt-[-5%]'>
-        <BottomNav />
-      </div>
     </div>
   );
 };

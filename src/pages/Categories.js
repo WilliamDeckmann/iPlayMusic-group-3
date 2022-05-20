@@ -8,7 +8,6 @@ import { IoEllipsisHorizontal } from 'react-icons/io5';
 const Categories = () => {
   return (
     <div className='h-[100%] w-full dark:bg-BleachedCedar bg-white overflow-hidden'>
-      <TopNav />
       <div className='ml-[8%]'>
         <HeadingGiant text='Categories' />
         <motion.div
@@ -78,9 +77,6 @@ const Categories = () => {
         >
           <CategoryCard background='#115793' color='white' text='Industrial' />
         </motion.div>
-      </div>
-      <div className='mt-[5%]'>
-        <BottomNav />
       </div>
     </div>
   );

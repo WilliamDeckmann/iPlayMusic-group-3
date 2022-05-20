@@ -74,7 +74,6 @@ const MusicPlayer = (props) => {
       className='w-full grid justify-center h-[100%] bg-white dark:bg-BleachedCedar'
       style={{ gridTemplateColumns: '1fr', gridTemplateRows: '1fr auto auto' }}
     >
-      <TopNav />
       <motion.section
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}

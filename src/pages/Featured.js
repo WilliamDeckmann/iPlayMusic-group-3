@@ -15,7 +15,6 @@ const FeaturedCard = React.lazy(() => import('../subComponents/FeaturedCard'));
 const Featured = () => {
   return (
     <div className='h-[100%] w-full dark:bg-BleachedCedar bg-white overflow-hidden'>
-      <TopNav />
       <div className='ml-[8%]'>
         <HeadingGiant text='Featured' />
       </div>
@@ -60,9 +59,6 @@ const Featured = () => {
             </div>
           </motion.div>
         </div>
-      </div>
-      <div className='mt-[5%]'>
-        <BottomNav />
       </div>
     </div>
   );
