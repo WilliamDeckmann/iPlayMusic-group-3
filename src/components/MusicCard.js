@@ -7,7 +7,9 @@ const MusicCard = (props) => {
   const [state, settState] = useState(false);
 
   const ChangeState = () => {
-    settState(!state);
+    if(props.clickable) {
+      settState(!state);
+    };
   };
 
   return (

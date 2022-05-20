@@ -63,6 +63,7 @@ module.exports = {
         'medium': '20px',
         'small': '15px',
         'tiny': '12px',
+        'micro': '10px',
       },
     },
   },
