@@ -64,7 +64,7 @@ const AlbumDetails = () => {
   ];
 
   return (
-    <div>
+    <div className='bg-white dark:bg-BleachedCedar'>
       <section
         className='h-[334px] pb-8 pt-2 flex flex-col justify-between bg-cover'
         style={{ backgroundImage: `url(${AbbeyRoad})` }}
