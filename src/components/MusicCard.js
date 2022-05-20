@@ -30,7 +30,7 @@ const MusicCard = (props) => {
         <section className='flex flex-col gap-1 font-bold'>
           <HeadingSmall
             text={props.title}
-            color={!state ? '#341931' : '#FFFFFF'}
+            //color={!state ? '#341931' : '#FFFFFF'}
             weight='600'
           />
           <TextTiny

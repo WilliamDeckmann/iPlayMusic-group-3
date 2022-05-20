@@ -1,5 +1,6 @@
 // Imports
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 // Pages
 import Welcome from './pages/Welcome';
@@ -22,8 +23,31 @@ import TopNav from './components/TopNav';
 import BottomNav from './components/BottomNav';
 
 function App() {
+  const location = useLocation();
+  const path = location.pathname;
+
+  const [topNav, setTopNav] = useState(true);
+  const [bottomNav, setBottomNav] = useState(true);
+
+  console.log(path);
+
+  useEffect(() => {
+    if (path == '/') {
+      setTopNav(false);
+      setBottomNav(false);
+    } else if (path == '/walkthrough') {
+      setTopNav(false);
+      setBottomNav(false);
+    } else if (path == '/playlists') {
+      setTopNav(false);
+    } else if (path == '/player/:id') {
+      setBottomNav(false);
+    };
+  }, []);
+
   return (
     <div>
+      {topNav && <TopNav />}
       <Routes>
         <Route exact path='/' element={<Welcome />} />
         <Route exact path='/login' element={<Login />} />
@@ -32,7 +56,6 @@ function App() {
         </Route>
       </Routes>
 
-      <TopNav />
       <Routes>
         <Route exact path='/player/:id' element={<Player />} />
         <Route exact path='/events-feed' element={<EventsFeed />} />
@@ -46,7 +69,7 @@ function App() {
         <Route exact path='/album-details/:id' element={<AlbumDetails />} />
         <Route path='*' element={<NothingFound />} />
       </Routes>
-      <BottomNav />
+      {bottomNav && <BottomNav />}
     </div>
   );
 }

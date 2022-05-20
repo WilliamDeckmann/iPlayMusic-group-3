@@ -1,7 +1,7 @@
 const AllArtists = () => {
   return (
     <div>
-      AllArtists
+      We don't have any artists...
     </div>
   );
 }

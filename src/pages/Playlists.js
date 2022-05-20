@@ -62,7 +62,9 @@ const Playlists = () => {
         </div>
         <img
           src='/assets/sound-wave.png'
-          class='mt-[-0px] large:w-[600px] large:h-[250px] tablet:w-[1100px] tablet:h-[300px] large:object-fill'
+
+          className='mt-[-0px] large:w-[600px] large:h-[500px] tablet:w-[1100px] tablet:h-[500px] large:object-fill'
+
         />
       </motion.div>
 
@@ -88,9 +90,6 @@ const Playlists = () => {
           <LongBtn text='Listen All' />
         </div>
       </motion.div>
-      <div className='mt-[-5%]'>
-        <BottomNav />
-      </div>
     </div>
   );
 };
