@@ -59,7 +59,7 @@ const AllAlbums = () => {
   ];
 
   return (
-    <div>
+    <div className='bg-white dark:bg-BleachedCedar h-[100%]'>
       <section className='p-6'>
         <HeadingGiant text='All Albums' />
       </section>
