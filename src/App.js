@@ -17,17 +17,9 @@ import AllAlbums from './pages/AllAlbums';
 import AlbumDetails from './pages/AlbumDetails';
 import NothingFound from './pages/NothingFound';
 
-// Text component imports: (only for testing)
-import HeadingGiant from './subComponents/HeadingGiant';
-import HeadingLarge from './subComponents/HeadingLarge';
-import HeadingBig from './subComponents/HeadingBig';
-import HeadingMedium from './subComponents/HeadingMedium';
-import HeadingSmall from './subComponents/HeadingSmall';
-import TextSmall from './subComponents/TextSmall';
-import TextTiny from './subComponents/TextTiny';
+// Components
 import TopNav from './components/TopNav';
 import BottomNav from './components/BottomNav';
-import Toggle from './context/ThemeToggle';
 
 function App() {
   return (
@@ -40,7 +32,7 @@ function App() {
         </Route>
       </Routes>
 
-      {/* <TopNav /> */}
+      <TopNav />
       <Routes>
         <Route exact path='/player/:id' element={<Player />} />
         <Route exact path='/events-feed' element={<EventsFeed />} />
@@ -54,17 +46,7 @@ function App() {
         <Route exact path='/album-details/:id' element={<AlbumDetails />} />
         <Route path='*' element={<NothingFound />} />
       </Routes>
-      
-
-      {/* Text component examples: (only for testing) */}
-      {/* <HeadingGiant text='HeadingGiant: 36px' color='red' weight='600' />
-      <HeadingLarge text='HeadingGiant: 32px' color='red' weight='600' />
-      <HeadingBig text='HeadingBig: 24px' color='red' weight='600' />
-      <HeadingMedium text='HeadingMedium: 20px' color='red' weight='600' />
-      <HeadingSmall text='HeadingSmall: 15px' color='red' weight='600' />
-      <TextSmall text='TextSmall: 15px' color='red' weight='600' />
-      <TextTiny text='TextSmall: 12px' color='red' weight='600' /> */}
-      {/* <Toggle /> */}
+      <BottomNav />
     </div>
   );
 }
