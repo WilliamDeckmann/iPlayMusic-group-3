@@ -38,6 +38,10 @@ function App() {
     } else if (path == '/walkthrough') {
       setTopNav(false);
       setBottomNav(false);
+    } else if (path == '/playlists') {
+      setTopNav(false);
+    } else if (path == '/player/:id') {
+      setBottomNav(false);
     };
   }, []);
 

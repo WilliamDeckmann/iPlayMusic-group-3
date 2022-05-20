@@ -1,7 +1,7 @@
 const EventsFeed = () => {
   return (
     <div>
-      EventsFeed
+      Very interesting content!
     </div>
   );
 }
