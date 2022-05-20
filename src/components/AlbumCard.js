@@ -11,6 +11,7 @@ const AlbumCard = (props) => {
       title={props.title}
       artist={props.artist}
       info={props.count}
+      clickable={false}
       content={
         <Link
           to={props.link}>

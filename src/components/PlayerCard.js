@@ -14,6 +14,7 @@ const PlayerCard = (props) => {
       title={props.title}
       artist={props.artist}
       info={props.time}
+      clickable={true}
       content={
         <Link
           to={props.link}>
