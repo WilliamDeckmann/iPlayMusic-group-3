@@ -11,12 +11,12 @@ const TopNav = () => {
     .toUpperCase();
 
   return (
-    <header class='bg-transparent dark:bg-transparent '>
+    <header className='bg-transparent dark:bg-transparent '>
       <nav className='w-full px-4 py-6 flex justify-between items-center font-medium'>
         <button className='w-4 p-2 box-content' onClick={() => navigate(-1)}>
           <IoIosArrowBack
             size='16px'
-            class='dark:text-white text-BleachedCedar'
+            className='dark:text-white text-BleachedCedar'
           />
         </button>
         <HeadingSmall
@@ -24,7 +24,10 @@ const TopNav = () => {
           className='dark:text-white text-BleachedCedar'
         />
         <button className='w-4 p-2 box-content justify-self-end'>
-          <IoIosSearch size='16px' class='dark:text-white text-BleachedCedar' />
+          <IoIosSearch
+            size='16px'
+            className='dark:text-white text-BleachedCedar'
+          />
         </button>
       </nav>
     </header>

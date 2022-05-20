@@ -14,28 +14,28 @@ const FeaturedCard = React.lazy(() => import('../subComponents/FeaturedCard'));
 
 const Featured = () => {
   return (
-    <div class='h-[100%] w-full dark:bg-BleachedCedar bg-white overflow-hidden'>
+    <div className='h-[100%] w-full dark:bg-BleachedCedar bg-white overflow-hidden'>
       <TopNav />
-      <div class='ml-[8%]'>
+      <div className='ml-[8%]'>
         <HeadingGiant text='Featured' />
       </div>
-      <div class='flex justify-center mt-[20px] relative overflow-scroll'>
-        <div class='grid gap-9 '>
+      <div className='flex justify-center mt-[20px] relative overflow-scroll'>
+        <div className='grid gap-9 '>
           <motion.div
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            class='opacity-0'
+            className='opacity-0'
           >
             <Suspense fallback={<div>Loading</div>}>
-              <FeaturedCard image="../assets/night.webp"/>
+              <FeaturedCard image='../assets/night.webp' />
             </Suspense>
-            <div class='absolute small:mt-[-60%] medium:mt-[-45%] large:mt-[-40%] tablet:mt-[-15%] ml-[3%]'>
+            <div className='absolute small:mt-[-60%] medium:mt-[-45%] large:mt-[-40%] tablet:mt-[-15%] ml-[3%]'>
               <HeadingLarge
                 text='The Greatest Showman'
                 color='white'
                 weight='bold'
               />
-              <div class='mt-[10px]'>
+              <div className='mt-[10px]'>
                 <TextSmall text='Soundtrack' color='white' />
               </div>
             </div>
@@ -43,18 +43,18 @@ const Featured = () => {
           <motion.div
             animate={{ opacity: 1 }}
             transition={{ duration: 2 }}
-            class='opacity-0'
+            className='opacity-0'
           >
             <Suspense fallback={<div>Loading</div>}>
-              <FeaturedCard image="../assets/music1.jpg"/>
+              <FeaturedCard image='../assets/music1.jpg' />
             </Suspense>
-            <div class='absolute small:mt-[-60%] medium:mt-[-45%] large:mt-[-40%] tablet:mt-[-15%] ml-[3%]'>
+            <div className='absolute small:mt-[-60%] medium:mt-[-45%] large:mt-[-40%] tablet:mt-[-15%] ml-[3%]'>
               <HeadingLarge
                 text='The Evilest Snowman'
                 color='white'
                 weight='bold'
               />
-              <div class='mt-[10px]'>
+              <div className='mt-[10px]'>
                 <TextSmall text='Soundtrack' color='white' />
               </div>
             </div>

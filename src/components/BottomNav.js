@@ -15,7 +15,7 @@ const BottomNav = () => {
     .toUpperCase();
 
   return (
-    <footer class='bottom-0 sticky bg-white dark:bg-Mirage drop-shadow-[0_25px_25px_rgba(0,0,0,0.25)]'>
+    <footer className='bottom-0 sticky bg-white dark:bg-Mirage drop-shadow-[0_25px_25px_rgba(0,0,0,0.25)]'>
       <svg width='0' height='0'>
         <linearGradient id='gradient' x1='100%' y1='100%' x2='0%' y2='0%'>
           <stop stopColor='#FF6A00' offset='0%' />
@@ -30,12 +30,12 @@ const BottomNav = () => {
           <IoIosMicrophone size='20px' style={{ fill: 'url(#gradient)' }} />
         </Link>
         <Link to='/featured'>
-
-          <div class='absolute h-[30px] w-[30px] rounded-full animate-ping bg-GradientRedOne ml-[5px] mt-[5px]'></div>
+          <div className='absolute h-[30px] w-[30px] rounded-full animate-ping bg-GradientRedOne ml-[5px] mt-[5px]'></div>
           <div
             className='h-6 w-6 p-2 box-content rounded-full relative'
-            style={{ background: 'linear-gradient(#EE0979, #FF6A00)' }}>
-            <IoMdWifi size='24px' class="text-white dark:text-black" />
+            style={{ background: 'linear-gradient(#EE0979, #FF6A00)' }}
+          >
+            <IoMdWifi size='24px' className='text-white dark:text-black' />
           </div>
         </Link>
         <Toggle size='20px' style={{ fill: 'url(#gradient)' }} />

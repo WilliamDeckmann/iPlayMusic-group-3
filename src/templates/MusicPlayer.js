@@ -74,12 +74,14 @@ const MusicPlayer = (props) => {
       className='w-full grid justify-center h-[100%] bg-white dark:bg-BleachedCedar'
       style={{ gridTemplateColumns: '1fr', gridTemplateRows: '1fr auto auto' }}
     >
-      <TopNav/>
-      <motion.section animate={{opacity: 1}} transition={{duration: 2}} 
+      <TopNav />
+      <motion.section
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2 }}
         className='py-6 flex justify-center items-center bg-center bg-contain bg-repeat-x opacity-0'
         style={{ backgroundImage: `url(${SoundWave})` }}
       >
-        <div class='absolute h-[115px] w-[115px] rounded-full animate-ping bg-DarkHotPink opacity-[70%] ml-[0px] mt-[0px]' />
+        <div className='absolute h-[115px] w-[115px] rounded-full animate-ping bg-DarkHotPink opacity-[70%] ml-[0px] mt-[0px]' />
         <img src={Vinyl} alt='Vinyl' className='w-[200px]' />
       </motion.section>
       <article className='flex flex-col gap-3 items-center'>
@@ -87,9 +89,10 @@ const MusicPlayer = (props) => {
         <TextSmall text='Artist' color='' weight='200' />
       </article>
       <motion.div
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      className='opacity-0 w-full p-6'>
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className='opacity-0 w-full p-6'
+      >
         <AudioPlayer
           // Setup
           audioFiles={props.array}
