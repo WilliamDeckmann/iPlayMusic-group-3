@@ -62,7 +62,9 @@ const Playlists = () => {
         </div>
         <img
           src='/assets/sound-wave.png'
+
           className='mt-[-0px] large:w-[600px] large:h-[500px] tablet:w-[1100px] tablet:h-[500px] large:object-fill'
+
         />
       </motion.div>
 
